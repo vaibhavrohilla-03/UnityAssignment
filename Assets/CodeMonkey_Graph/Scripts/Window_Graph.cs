@@ -35,21 +35,21 @@ public class Window_Graph : MonoBehaviour {
         labelTemplateY = graphContainer.Find("labelTemplateY").GetComponent<RectTransform>();
         
 
-        gameObjectList = new List<GameObject>();
+        //gameObjectList = new List<GameObject>();
 
-        if (csvReader != null)
-        {
-            List<int> csvData = csvReader.GetCSVData(); // Get CSV data
-            if (csvData.Count > 0)
-            {
-                ShowGraph(csvData);
-            }
+        //if (csvReader != null)
+        //{
+        //    //List<int> csvData = csvReader.GetCSVData(); // Get CSV data
+        //    if (csvData.Count > 0)
+        //    {
+        //        ShowGraph(csvData);
+        //    }
             
-        }
-        else
-        {
-            Debug.LogError("csv empty");
-        }
+        //}
+        //else
+        //{
+        //    Debug.LogError("csv empty");
+        //}
     }
 
     private void ShowGraph(List<int> valueList, int maxVisibleValueAmount = -1, Func<int, string> getAxisLabelX = null, Func<float, string> getAxisLabelY = null) {

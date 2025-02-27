@@ -39,8 +39,22 @@ public class CSVReader : MonoBehaviour
         return csvData;
     }
 
-    public List<int> GetCSVData()
+    public Dictionary<string, int> GetCSVData()
     {
-        return extractedData; 
+        Dictionary<string, int> data = new Dictionary<string, int>();
+
+         
+        string[] lines = csvFile.text.Split('\n');
+
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split(',');
+            if (parts.Length == 2 && int.TryParse(parts[1], out int value))
+            {
+                data[parts[0].Trim()] = value;
+            }
+        }
+
+        return data;
     }
 }
