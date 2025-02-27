@@ -18,15 +18,7 @@ public class BarGraph3D : MonoBehaviour
 
     void Start()
     {
-        if (csvReader != null)
-        {
-            Dictionary<string, int> data = csvReader.GetCSVData();
-            ShowGraph(data);
-        }
-        else
-        {
-            Debug.LogError("CSVReader is missing!");
-        }
+        
     }
 
     public void ShowGraph(Dictionary<string, int> data)
