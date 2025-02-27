@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarGraphController : MonoBehaviour
+public class LineGraphController : MonoBehaviour
 {
-     public BarGraph3D barGraph;
-     public LineGraphController linegraphcontroller;
-
+     public LineGraph3D lineGraph;
+     public BarGraphController barGraphcontroller;
     public void PlotData(TextAsset csvFile)
     {
-        if (barGraph == null)
+        if (lineGraph == null)
         {
-            Debug.LogError("Barnone");
+            Debug.LogError("LineGraph3D is missing!");
             return;
         }
 
         if (csvFile == null)
         {
-            Debug.LogError("CSVnull");
+            Debug.LogError("CSV file is null!");
             return;
         }
 
@@ -26,19 +25,17 @@ public class BarGraphController : MonoBehaviour
 
     private IEnumerator PlotDataCoroutine(TextAsset csvFile)
     {
-        
-        barGraph.ResetGraph();
-        linegraphcontroller.lineGraph.ResetGraph();
-     
-        yield return new WaitForSeconds(barGraph.animationDuration);
+        lineGraph.ResetGraph();
+        barGraphcontroller.barGraph.ResetGraph();
 
-        CSVReader csvReader = barGraph.GetComponent<CSVReader>();
+        yield return new WaitForSeconds(lineGraph.lineAnimationDuration);
+
+        CSVReader csvReader = lineGraph.GetComponent<CSVReader>();
         if (csvReader != null)
         {
             csvReader.csvFile = csvFile;
             Dictionary<string, int> newData = csvReader.GetCSVData();
-            barGraph.ShowGraph(newData);
+            lineGraph.ShowGraph(newData);
         }
-        
     }
 }

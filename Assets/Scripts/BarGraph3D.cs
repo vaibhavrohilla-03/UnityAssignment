@@ -86,6 +86,8 @@ public class BarGraph3D : MonoBehaviour
 
     private IEnumerator ResetBarsCoroutine()
     {
+        if(bars.Count == 0) yield break;
+
         float elapsedTime = 0;
         List<Vector3> startScales = new List<Vector3>();
 
