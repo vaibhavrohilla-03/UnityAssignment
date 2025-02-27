@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour {
     public static QuizManager instance;
@@ -12,6 +14,9 @@ public class QuizManager : MonoBehaviour {
     public QuestionSO[] questionSos;
     private int currentQuestionIndex = 0;
     private GameObject currentQuestionGO = null;
+
+    public TextMeshProUGUI scoreText;
+    public int score = 0;
     
     private void Start() {
         instance = this;
@@ -27,8 +32,12 @@ public class QuizManager : MonoBehaviour {
             currentQuestionIndex++;
         }
         else {
-            
+            Invoke("ChangeScene", 5f);
         }
+    }
+
+    private void ChangeScene() {
+        SceneManager.LoadScene(1);
     }
     
 
@@ -39,6 +48,14 @@ public class QuizManager : MonoBehaviour {
         quizTextSetup.questionSo = questionSo;
         quizTextSetup.SetText();
         currentQuestion.GetComponent<QuizMovement>().StartMoving(stoppingPoint);
+    }
+
+    public void SetScore() {
+        scoreText.text = "Score\n" + score + " / " + questionSos.Length;
+    }
+
+    public void IncreaseScore() {
+        score++;
     }
 
 }

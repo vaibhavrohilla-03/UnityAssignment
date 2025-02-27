@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d638d2640b410b3498c63ba36b80afa5, type: 3}
-  m_Name: Question2
+  m_Name: Question3
   m_EditorClassIdentifier: 
-  question: Which of the following is NOT a step in the Data Science process ?
+  question: What type of chart is best for comparing categories?
   answers:
-  - 'A. Data Collection '
-  - 'B. Data Cleaning '
-  - C. Data Sleeping
-  - 'D. Data Visualization  '
-  correctAnswerIndex: 2
+  - A. Line Chart
+  - B. Bar Chart
+  - C. Scatter Plot
+  - D. Pie Chart
+  correctAnswerIndex: 1
   wrongSelection:
-  - 'Data Science starts with collecting relevant data. '
-  - 'Before analysis, data must be cleaned to remove errors. '
+  - 'Line charts show trends over time, not category comparisons. '
   - Null
-  - 'Data visualization helps interpret and communicate results. '
+  - 'Scatter plots display relationships between two numeric variables. '
+  - 'Pie charts show proportions, not category comparisons. '

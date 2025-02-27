@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eab29331-42e7-4030-b4b8-306585bfef2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/proj prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/proj prefabs/Door.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/proj prefabs/Door.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_close.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_close.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_closed.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_closed.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_open.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_open.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_opened.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/door_2_opened.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/frame_door_2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Animations/frame_door_2.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Models/Materials/base color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Models/Materials/base color.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Proj assets/Sci-Fi Styled Modular Pack/Prefabs/Doors/door_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Environment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Environment.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityAssignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/QuizScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/QuizScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/Question1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/Question1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/Question2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/Question2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/QuestionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuestionsAndAnswers/QuestionSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizTextSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quiz/QuizTextSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +26,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Quiz/QuizManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2tabEou6a7sZFfDiFWykjGxDtmo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,7 +38,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740593024802</updated>
-      <workItem from="1740593027862" duration="6224000" />
+      <workItem from="1740593027862" duration="7581000" />
+      <workItem from="1740629985883" duration="408000" />
     </task>
     <servers />
   </component>

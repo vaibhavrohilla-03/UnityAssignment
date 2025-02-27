@@ -11,4 +11,7 @@ public class QuestionSO : ScriptableObject {
 
     [Range(0, 3)]
     public int correctAnswerIndex; // Index of the correct answer in the array
+    
+    [SerializeField]
+    public string[] wrongSelection;
 }

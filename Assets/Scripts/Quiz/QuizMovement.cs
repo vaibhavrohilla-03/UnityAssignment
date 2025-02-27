@@ -10,7 +10,7 @@ public class QuizMovement : MonoBehaviour {
 
     IEnumerator StartMovingCou(Vector3 target) {
         while (transform.position.z > target.z) {
-            transform.Translate(0f, 0f, -1.5f * Time.deltaTime);
+            transform.Translate(0f, 0f, -2.5f * Time.deltaTime);
             yield return null;
         }
         GetComponent<QuizTextSetup>().EnableOptions();
