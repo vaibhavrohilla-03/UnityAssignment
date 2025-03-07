@@ -5,10 +5,10 @@ using TMPro;
 
 public class BarGraph3D : MonoBehaviour
 {
-    [SerializeField] private CSVReader csvReader;
+    
     [SerializeField] private GameObject barPrefab;
     [SerializeField] private float barSpacing = 2f;
-    [SerializeField] private float barScaleFactor = 0.5f;
+    [SerializeField] private float barScaleFactor = 0.2f;
     [SerializeField] private Transform graphOrigin;
     [SerializeField] public float animationDuration = 1f;
     [SerializeField] public Color labelcolor;  
@@ -23,6 +23,7 @@ public class BarGraph3D : MonoBehaviour
 
     public void ShowGraph(Dictionary<string, int> data)
     {
+        Debug.Log("showgraph called");
         int index = 0;
         foreach (var entry in data)
         {
@@ -66,7 +67,7 @@ public class BarGraph3D : MonoBehaviour
 
         TextMeshPro textMesh = label.AddComponent<TextMeshPro>();
         textMesh.text = labelName;
-        textMesh.fontSize = 2;
+        textMesh.fontSize = 3;
         textMesh.alignment = TextAlignmentOptions.Center;
 
         

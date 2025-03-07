@@ -5,7 +5,7 @@ using TMPro;
 
 public class LineGraph3D : MonoBehaviour
 {
-    [SerializeField] private CSVReader csvReader;
+    
     [SerializeField] private GameObject pointPrefab;
     [SerializeField] private float pointSpacing = 2f;
     [SerializeField] private float pointScaleFactor = 0.5f;
@@ -20,12 +20,6 @@ public class LineGraph3D : MonoBehaviour
     private List<LineRenderer> lines = new List<LineRenderer>();
     private List<GameObject> labels = new List<GameObject>();
 
-    void Start()
-    {
-        Dictionary<string, int> data = csvReader.GetCSVData();
-        ShowGraph(data);
-    }
-
     public void ShowGraph(Dictionary<string, int> data)
     {
         int index = 0;
@@ -37,7 +31,7 @@ public class LineGraph3D : MonoBehaviour
             int quantity = entry.Value;
 
             float xPos = index * pointSpacing;
-            Vector3 pointPosition = new Vector3(0, quantity * pointScaleFactor, xPos) + graphOrigin.position;
+            Vector3 pointPosition = new Vector3(0, quantity/2.5f * pointScaleFactor, xPos) + graphOrigin.position;
 
             GameObject point = Instantiate(pointPrefab, pointPosition, Quaternion.identity, graphOrigin);
             points.Add(point);

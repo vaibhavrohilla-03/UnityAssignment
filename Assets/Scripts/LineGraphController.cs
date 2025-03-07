@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LineGraphController : MonoBehaviour
-{
+{   
+    public CSVReader csvReader;
      public LineGraph3D lineGraph;
      public BarGraphController barGraphcontroller;
     public void PlotData(TextAsset csvFile)
@@ -30,7 +31,6 @@ public class LineGraphController : MonoBehaviour
 
         yield return new WaitForSeconds(lineGraph.lineAnimationDuration);
 
-        CSVReader csvReader = lineGraph.GetComponent<CSVReader>();
         if (csvReader != null)
         {
             csvReader.csvFile = csvFile;
