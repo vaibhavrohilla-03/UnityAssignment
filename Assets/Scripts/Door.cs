@@ -5,30 +5,23 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
 
-    private BoxCollider doorcollider;
+    
     public Animator animator;
-    void Start()
-    {
-        if(!(TryGetComponent<BoxCollider>(out doorcollider)))
-        {
-            Debug.Log("attatch collider");
-        }
-        
-    }
 
-    public void OnTriggerEnter(Collider collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
+    public void OnTriggerEnter(Collider other)
+    {   
+
+        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Drone"))
         {   
             animator.Play("door_2_open");
             Debug.Log("Entered");
         }
     }
 
-    public void OnTriggerExit(Collider collision)
+    public void OnTriggerExit(Collider other)
     {
 
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Drone"))
         {
             animator.Play("door_2_close");
         }
